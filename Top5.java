@@ -41,7 +41,7 @@ public class Top5 {
 
         int i = 0;
         int tmp;
-        while (i < 5 && val_top5[i + 1] < val_top5[i]) {
+        while (i < 4 && val_top5[i + 1] < val_top5[i]) {
           tmp = this.id_author_top5[i];
           this.id_author_top5[i] = this.id_author_top5[i + 1];
           this.id_author_top5[i + 1] = tmp;
