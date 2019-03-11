@@ -28,9 +28,7 @@ bin/hadoop fs -cat /user/homework1/page_count_out/part-r-00000
 # second exercise
 curl -L https://raw.githubusercontent.com/ombelinelage/dmINF583/master/Top5.java -o Top5.java
 
-# We can now run it
 bin/hadoop com.sun.tools.javac.Main Top5.java
 jar cf top5.jar Top5*.class
 bin/hadoop jar top5.jar Top5 /user/homework1/paperauths.tsv /user/homework1/author_top5_out/
-
 bin/hadoop fs -cat /user/homework1/author_top5_out/part-r-00000
